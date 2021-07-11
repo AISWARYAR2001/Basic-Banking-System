@@ -1,0 +1,195 @@
+<html lang="en">
+<head>
+<title>TSF Banking system</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  
+  <!--Awesome CSS-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--style-->
+  <style type="text/css">
+    .nav-link 
+	{
+    margin-right:90px;
+    letter-spacing: 0.5px;
+    }
+	body
+	{
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	}
+	.d-flex
+	{
+	margin-top:8px;
+	}
+	.class1
+    {
+    font-size:20px;
+    color:black;
+    position:absolute;
+    border:2px solid white;
+    padding:50px 70px 300px 70px;
+    border-radius:30px;
+    background-color:none;
+    }
+    label[for="username"],label[for="message"]
+    {
+    margin-left:15%;
+	color:white;
+    } 
+    label[for="email"]
+    {
+    margin-left:17%;
+	color:white;
+    }
+    input[type="text"]
+	{
+    border:2px solid lavender;
+    height:30px;
+	margin-left:1.5%;
+    width:300;
+    }
+    input[type="email"]
+    {
+    border:2px solid lavender;
+    height:30px;
+	margin-left:1.5%;
+    width:300;
+    }
+    input[type="submit"]
+    {
+    margin-left:10%;
+    background-color:dodgerblue;
+    height:25px;
+    font-size:15px;
+    width:170px;
+    color:seashell;
+    border:2px solid seashell;
+    }
+    input[type="submit"]:hover
+    {
+    cursor:pointer;
+    background-color:pink;
+    color:black;
+    }
+  </style>
+</head>
+<body background="R (1).jpg">
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="font-style:italic;font-family:timesnew;font-size:40px;">TSF BANK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColl"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColl">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item ">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="getstart.html">Customer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact us</a>
+            </li>
+          </ul>
+ 
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+	</header> 
+	<div class="container-fluid"> 
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+       <div class="item active">
+         <img src="1_YD9TnP7DtVaylM3847wn7w.jpeg" alt="bank" style="width:100%;height:100%;">
+       </div>
+
+       <div class="item">
+         <img src="Banking-SEO-cover.jpg" alt="bank" style="width:100%;height:100%;">
+       </div>
+    
+       <div class="item">
+         <img src="Online-Banking.jpg" alt="bank" style="width:100%;height:100%;">
+       </div>
+     </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</body> 
+
+
+<section id="main" class="coloured-section" style="margin-left:37%;" >
+ <form name="sform">
+     <div class="input-con">
+     <label for="username">USERNAME</br></label></br>
+     <input type="text"  name="username" placeholder="username" required="" autofocus/><br/></br>
+	 <label for="email">EMAIL<br/></label></br>
+	 <input type="email" name="email" placeholder="email@example.com" required="" autofocus/></br></br>
+	 <label for="message">MESSAGE<br/></label></br>
+	 <textarea name="message" placeholder="text" required="" autofocus/ style="border:2px solid lavender;height:60px;margin-left:1.5%;width:300;"></textarea></br></br>
+	 </div>
+	 <div id="demo"></div>
+	 <input type="submit" value="SUBMIT"/><br/></br>
+  </form> 
+</section>
+<footer class="container-fluid bg-dark my-0 py-3 text-light">
+  <p class="mb-0  text-center" style="letter-spacing:5px;">
+  <a href="#"><i class="fa fa-facebook-f fa-lg" style="color:seashell;"></i></a>
+  <a href="#"><i class="fa fa-instagram" style="color:seashell;"></i></a>
+  <a href="#"><i class="fa fa-twitter" style="color:seashell;"></i></a>
+  <a href="#"><i class="fa fa-linkedin" style="color:seashell;"></i></a>
+  <a href="#"><i class="fa fa-telegram" style="color:seashell;"></i></a>
+  <a href="#"><i class="fa fa-envelope icon" style="color:seashell;"></i></a>
+  </p>
+  <p class="mb-0 text-center">&copy; 2020-2021 TSF BANK.com</p>
+  <p class="mb-0 text-center">
+    <a href="#">Back to top |</a>
+    <a href="#">Privacy |</a>
+	<a href="about.html">About us |</a>
+	<a href="contactus.html">Contact us |</a>
+    <a href="#">Terms</a>
+  </p>
+</footer>
+</html>
+
+
+
+
+ 
